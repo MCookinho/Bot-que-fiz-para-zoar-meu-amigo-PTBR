@@ -35,7 +35,7 @@ client_v1 = get_twitter_conn_v1(api_key, api_secret, access_token, access_token_
 client_v2 = get_twitter_conn_v2(api_key, api_secret, access_token, access_token_secret)
 
 # Diretório onde suas imagens estão localizadas
-diretorio_imagens = r'C:\Users\User\Documents\imagensvava'
+diretorio_imagens = 'imagensvava'
 
 # Lista de arquivos de imagem no diretório
 arquivos_imagem = os.listdir(diretorio_imagens)
