@@ -15,7 +15,7 @@ jobs:
         pip install python-dotenv
     - name: Compilando o script
       run: |
-        python main.py
+        python3 main.py
       env:
         TWITTER_API_KEY : ${{ secrets.API_KEY }}
         TWITTER_API_SECRET : ${{ secrets.api_secret }}
