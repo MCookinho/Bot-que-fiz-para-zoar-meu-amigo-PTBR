@@ -4,10 +4,10 @@ import requests
 import os
 
 #definição das chaves
-api_key = os.environ['TWITTER_API_KEY']
-api_secret = os.environ['TWITTER_API_SECRET']
-access_token = os.environ['TWITTER_ACCESS_TOKEN']
-access_token_secret = os.environ['TWITTER_ACCESS_SECRET']
+api_key = "xBWgxrsEMPwAykHECZZsZvhbK"
+api_secret = "gtgNsM0vsemGHnJhUA27SQ6AbOX0uf3Su0a2NglJTltY6F2ZsP"
+access_token = "1792623803803062272-KErzsQTg3cmtSQR3RdA73k7hnl1J5L"
+access_token_secret = "JIF3ruN1kTQSlQJvX8dvnUb9ulgL9tsJGVMqrkYrzPsnS"
 
 def get_twitter_conn_v1(api_key, api_secret, access_token, access_token_secret) -> tweepy.API:
     """Get twitter conn 1.1"""
@@ -35,7 +35,7 @@ client_v1 = get_twitter_conn_v1(api_key, api_secret, access_token, access_token_
 client_v2 = get_twitter_conn_v2(api_key, api_secret, access_token, access_token_secret)
 
 # Diretório onde suas imagens estão localizadas
-diretorio_imagens = 'imagensvava'
+diretorio_imagens = r'C:\Users\User\Documents\imagensvava'
 
 # Lista de arquivos de imagem no diretório
 arquivos_imagem = os.listdir(diretorio_imagens)
