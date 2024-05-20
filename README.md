@@ -1,0 +1,1 @@
+# Bot-que-fiz-para-zoar-meu-amigo-PTBR
