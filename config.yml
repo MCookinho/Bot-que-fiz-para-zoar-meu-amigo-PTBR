@@ -1,0 +1,24 @@
+name: Postando Tweet
+on:
+  schedule:
+    - cron: '*/60 * * */2 *' # Runs Bot every 30 minutes
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checando conteudo do repositorio
+      uses: actions/checkout@v2 # 
+    - name: Instalando bibliotecas
+      run: |
+        pip install tweepy
+        pip install python-dotenv
+    - name: Compilando o script
+      run: |
+        python main.py
+      env:
+        TWITTER_API_KEY : ${{ secrets.API_KEY }}
+        TWITTER_API_SECRET : ${{ secrets.api_secret }}
+        TWITTER_ACCESS_TOKEN : ${{ secrets.ACCESS_TOKEN }}
+        TWITTER_ACCESS_SECRET : ${{ secrets.ACCESS_SECRET }}
+        TWITTER_BEARER_TOKEN : ${{ secrets.BEARER_TOKEN }}
